@@ -1,20 +1,64 @@
-# Actividad 0.2 - UDP and TCP: Comparison of Transport Protocols
+Actividad 0.2 TCP y UDP
+1. ¿Diferencias entre UDP y TCP?
 
-1. **Diferencias entre UDP y TCP:**
-   - **TCP:** Orientado a conexión, fiable, garantiza la entrega ordenada de paquetes mediante confirmaciones (ACKs)[cite: 1].
-   - **UDP:** Sin conexión, no garantiza la entrega ni el orden, orientado a la velocidad y baja latencia[cite: 1].
+TCP es un protocolo que controla la entrega de los datos. Los datos se envían de forma numerada y, si alguno se pierde, se puede volver a solicitar. Por eso es un protocolo más fiable.
 
-2. **¿Qué aplicaciones usan TCP?**
-   - HTTP/HTTPS, SMTP, POP, IMAP, SSH, FTP[cite: 1].
+UDP, en cambio, busca principalmente que los datos se envíen rápidamente. No comprueba que todos los datos hayan llegado correctamente, por lo que puede haber pérdidas. Esto es útil en aplicaciones como juegos online, streaming o videollamadas, donde es más importante reducir el retraso.
 
-3. **¿Qué aplicaciones usan UDP?**
-   - DNS (puerto 53), DHCP, TFTP, Streaming, VoIP[cite: 1].
+tpc
+2. ¿Qué aplicaciones usan TCP?
 
-4. **¿Qué capa almacena el puerto?**
-   - Capa de Transporte (Capa 4)[cite: 1].
+Según el vídeo, algunas aplicaciones que utilizan TCP son:
 
-5. **¿Qué capa almacena la dirección IP?**
-   - Capa de Red / Internet (Capa 3)[cite: 1].
+HTTP → navegación web.
 
-6. **¿Qué es el Three-Way Handshake?**
-   - Proceso de negociación TCP en 3 pasos: `SYN` $\rightarrow$ `SYN-ACK` $\rightarrow$ `ACK`[cite: 1].
+SMTP → envío de correos electrónicos.
+
+POP → recepción de correos.
+
+IMAP → gestión y recepción de correos.
+
+SSH → conexión remota.
+
+3. ¿Qué aplicaciones usan UDP?
+
+- Protocolo: Indica cómo acceder al recurso
+(ej. http, https, ftp) seguido de dos puntos y doble barra (://).
+
+- Dominio: El nombre del servidor o máquina que aloja el recurso, incluyendo
+opcionalmente un dominio de nivel superior (ej. .com, .org).
+
+- Puerto (Opcional): Indica el puerto de comunicación del servidor
+(por defecto es el puerto 80 para HTTP web normal,
+u otros como 3000 en entornos de desarrollo).
+
+- Ruta (Path): La ruta detallada dentro de la estructura de archivos o
+jerarquía de datos del servidor para localizar
+el recurso (ej. /productos/index.html).
+
+4. ¿Qué capa almacena el puerto?
+
+Cuando escribes una URL en el navegador y le das a Enter, pasa todo esto:
+
+1. Petición (Request): El navegador (cliente) crea un mensaje HTTP
+de tipo GET pidiendo la página o archivo que quieres ver,
+y lo manda por la red usando la conexión TCP/IP hacia
+el servidor correspondiente.
+
+2. Respuesta (Response): El servidor prepara la respuesta metiendo el
+archivo dentro de un mensaje HTTP y se lo devuelve al cliente.
+
+5. ¿Qué capa almacena la dirección IP?
+
+La Capa de Red, dentro del paquete de datos.
+6. ¿Qué es Three-Way Handshake?
+
+Es el proceso en tres pasos para abrir una conexión TCP:
+
+Paso 1 (SYN): El equipo emisor (initiator) envía una solicitud inicial preguntando al receptor si desea establecer una conexión.
+
+Paso 2 (SYN-ACK): El equipo receptor (acceptor) responde a la solicitud confirmando que está listo.
+
+Paso 3 (ACK): El emisor recibe la respuesta y envía un último paquete confirmando que la conexión ya ha quedado establecida.
+
+tpc
