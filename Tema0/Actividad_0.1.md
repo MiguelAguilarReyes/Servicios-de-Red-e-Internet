@@ -6,6 +6,7 @@ Respuestas de la Actividad Web
     Cuándo: En 1990, funcionando en un ordenador NeXT.
 
 Tim Berners-Lee
+
 2. ¿Qué es la pila de protocolos usados por http?
 
 HTTP funciona apoyándose en la pila de protocolos TCP/IP, donde cada capa tiene su función:
@@ -27,6 +28,7 @@ Una URL se forma con las siguientes partes:
     Parámetros: Datos o variables que se mandan al servidor.
     Fragmento: Un ancla para ir a una zona concreta de la página.
 
+
 4. ¿Pasos en la recuperación de una página web mediante HTTP?
 
     Resolución DNS: El navegador busca la IP correspondiente al nombre de la página.
@@ -36,10 +38,12 @@ Una URL se forma con las siguientes partes:
     Respuesta HTTP: El servidor contesta enviando el código de estado y el contenido (HTML, imágenes...).
     Renderizado: El navegador lee toda esa información y la muestra visualmente en la pantalla.
 
+
 5. Diferencia entre páginas dinámicas y estáticas
 
     Páginas estáticas: Su contenido siempre es el mismo. El servidor devuelve el archivo tal cual está guardado en el disco.
     Páginas dinámicas: El contenido se crea en el momento. El servidor ejecuta un programa o consulta una base de datos para armar la página a medida antes de enviarla.
+
 
 6. ¿Cómo usar telnet para acceder a un servidor web?
 
