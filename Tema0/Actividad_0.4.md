@@ -1,14 +1,12 @@
-### `Tema0/Actividad_0.4.md`
+Actividad 0.4
 
-```markdown
-# Actividad 0.4 - Usando cURL
+cURL es una herramienta de línea de comandos y una biblioteca que sirve para transferir datos hacia o desde un servidor utilizando una gran variedad de protocolos (como HTTP, HTTPS, FTP, etc.). Permite simular peticiones web, descargar archivos, probar o consumir APIs, y ver códigos fuente o respuestas en formatos como JSON o XML.
 
-## 5 Ejemplos de uso del comando cURL
+Vamos a probar 5 comando de cURL, El primero permite obtener la pagina principal de la web o servidor al que apuntemos: Comando
 
-1. **Obtener el contenido HTML de una página:**
-```bash
-curl [https://www.google.com](https://www.google.com)
-curl -o pagina_debian.html [https://www.debian.org](https://www.debian.org)
-curl -I [https://www.debian.org](https://www.debian.org)
-curl -X POST -d "usuario=asir&clave=1234" [https://ejemplo.com/login](https://ejemplo.com/login)
-curl -L [http://google.com](http://google.com)
+curl https://www.google.com/
+
+El segundo nos permite obtener la pagina web atreves del puerto 8000 Comando
+
+curl http://www.example.com:8000/
+
