@@ -19,4 +19,4 @@ Actividades del módulo de Servicios de Red e Internet.
 
 | Ejercicio | Descripción |
 | :--- | :--- |
-| [Actividad 1](./Tema1/Actividad_1.md) | Instalación de Apache |
+| [Actividad 1](./Tema1/Actividad1.md) | Instalación de Apache |
